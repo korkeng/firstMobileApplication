@@ -6,10 +6,7 @@ import style from './styles'
 
 const FavouriteButton = ( {img, name, desc, vote, date, id} ) => {
 
-    const { addFavourite } = useContext(MovieContext)
-    const { delFavourite } = useContext(MovieContext)
-    const { favouriteData } = useContext(MovieContext)
-
+    const { addFavourite, delFavourite, favouriteData } = useContext(MovieContext)
     const [isFavourite, setIsFavourite] = useState(false)
 
     useEffect(() => {
